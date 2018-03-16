@@ -14,3 +14,7 @@ using a REST API.
 Finally, the solution includes a project named **WebhookReceiverDemo**, which provides a sample implementation of a WebAPI 2-based API 
 that can receive wwebhook calls from the Encompass NG Lending Platform. Using webhooks, you can be notified of key business or data
 events within your Encompass system, such as a Loan being created or modified.
+
+In each project, you will need to modify the app.config or web.config file in order to run the code. Within the config file, look for
+replacement variables which look like `_your_oauth_clientid` and replace the placeholder with the appropriate value for your Encompass
+environment.
