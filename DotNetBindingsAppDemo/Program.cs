@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using Elli.Api.Base;
 using Elli.Api.Loans.Api;
+using Elli.Api.Loans.Client;
 using Elli.Api.Loans.Model;
 using Elli.Api.Loans.Pipeline.Api;
 using Elli.Api.Loans.Pipeline.Model;
@@ -65,11 +66,18 @@ namespace DotNetBindingsAppDemo
 				}
 			};
 
-			// Create the Loan API client
-			var loanClient = ApiClientProvider.GetApiClient<LoansApi>(accessToken);
-			loanClient.UpdateLoan(loanGuid, loanContract: loan);
-
-            Console.WriteLine("Loan updated successfully");
+            try
+            {
+                // Create the Loan API client
+                var loanClient = ApiClientProvider.GetApiClient<LoansApi>(accessToken);
+                loanClient.UpdateLoan(loanGuid, loanContract: loan);
+                Console.WriteLine("Loan updated successfully");
+            }
+            catch (ApiException ex)
+            {
+                Console.WriteLine("Loan update failed with response "
+                    + ex.ErrorContent);
+            }
 
             // In the debugger, don't close the window right away
             if (System.Diagnostics.Debugger.IsAttached) Console.ReadLine();
