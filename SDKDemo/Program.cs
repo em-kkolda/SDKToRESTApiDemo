@@ -45,10 +45,11 @@ namespace SDKDemo
 			{
 				loan.Fields["1887"].Value = DateTime.Today;
 				loan.Commit();
-			}
+                loan.Unlock();
+            }
 
-			// Close the session
-			session.End();
+            // Close the session
+            session.End();
 		}
 	}
 }
