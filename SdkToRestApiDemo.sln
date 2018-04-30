@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetBindingsAppDemo", "Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebhookReceiverDemo", "WebhookReceiverDemo\WebhookReceiverDemo.csproj", "{CF891AD5-DAE1-43C9-9A0D-9F76123EEE82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncompassRestAppDemo", "EncompassRestAppDemo\EncompassRestAppDemo.csproj", "{276182FC-3021-4FDA-95A6-CE0148F589FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CF891AD5-DAE1-43C9-9A0D-9F76123EEE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF891AD5-DAE1-43C9-9A0D-9F76123EEE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF891AD5-DAE1-43C9-9A0D-9F76123EEE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276182FC-3021-4FDA-95A6-CE0148F589FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276182FC-3021-4FDA-95A6-CE0148F589FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276182FC-3021-4FDA-95A6-CE0148F589FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276182FC-3021-4FDA-95A6-CE0148F589FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
